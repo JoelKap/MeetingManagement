@@ -1,0 +1,61 @@
+﻿<section class="contact-section">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="col-md-9 col-sm-12 col-xs-12 contact-form wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                <form>
+                    <div class="row clearfix">
+
+                        <div class="col-md-5 col-sm-6 col-xs-12">
+
+                            <div class="form-group">
+                                <label for="meetingType">Existing Meetings</label>
+                                <select id="meetingType" ng-model="vm.meeting" ng-options="meeting.MeetingName for meeting in vm.meetings" ng-change="vm.selectedMeeting(vm.meeting)"></select>
+                            </div>
+
+                            <div class="form-group" ng-if="vm.isMeetingSelected">
+                                <label for="meetingType">Meeting Type</label>
+                                <select id="meetingType" ng-model="vm.meetingType" ng-options="meeting.MeetingTypeName for meeting in vm.meetingTypes" ng-change="vm.selectedMeetingType(vm.meetingType)">
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Meeting Name</label>
+                                <input id="meetingDate" ng-model="vm.meeting.meetingName" name="date" placeholder="Meeting Name" type="text">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Date</label>
+                                <input id="meetingDate" ng-model="vm.meeting.meetingDate" name="date" placeholder="Date" type="date">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Time</label>
+                                <input id="meetingTime" ng-model="vm.meeting.meetingTime" name="time" placeholder="Time" type="time">
+                            </div>
+                        </div>
+                        <div ng-if="vm.isMeetingItemSelected">
+                            <label for="meetingItems">Existing Meeting Items</label>
+                            <select size="5" multiple ng-model="vm.available" ng-change="vm.selectedMeetingItem(vm.available)" ng-options="meeting as meeting.MeetingItemName for meeting in vm.meetingItems" style="width: 400px"></select>
+                            <br />
+
+                            <button type="button" class="btn btn-primary" ng-click="vm.moveItem(vm.available, vm.meetingItems,vm.selectedclients)">Add Item</button>
+                            <button type="button" class="btn btn-primary" ng-click="vm.moveAll(vm.meetingItems,vm.selectedclients)">Add All Items</button>
+
+                            <button type="button" class="btn btn-primary" ng-click="vm.moveItem(vm.selected, vm.selectedclients,vm.meetingItems)">Remove Items</button>
+                            <button type="button" class="btn btn-primary" ng-click="vm.moveAll(vm.selectedclients,vm.meetingItems)">Remove All Items</button>
+
+                            <label for="sclients">Selected Items</label>
+                            <select size="5" multiple ng-model="vm.selected" ng-options="client as client.MeetingItemName for client in vm.selectedclients" style="width: 400px"></select>
+                            <div>Available: {{vm.display.name}}</div>
+                            <div>Status: {{vm.display.statusName}}</div>
+                        </div>
+
+                        <div class="form-group" ng-if="vm.isMeetingItemSelected">
+                            <button type="button" ng-click="vm.createMeeting()" name="submit-form" class="theme-btn btn-style-one hvr-bounce-to-right">Create Meeting</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,48 @@
+﻿    <!-- Page Banner -->
+<!--Contact Section-->
+<section class="contact-section">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <form class="form-horizontal">
+                <h3>Created Meeting</h3>
+                <br />
+                <div class="form-group">
+                    <label class="control-label col-xs-2">Meeting Name</label>
+                    <div class="col-xs-10">
+                        <p class="form-control-static">{{vm.meeting.MeetingName}}</p>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-xs-2">Meeting Type</label>
+                    <div class="col-xs-10">
+                        <p class="form-control-static">{{vm.meeting.MeetingTypeName}}</p>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-xs-2">Meeting Date</label>
+                    <div class="col-xs-10">
+                        <p class="form-control-static">{{vm.date}}</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-xs-2">Meeting Time</label>
+                    <div class="col-xs-10">
+                        <p class="form-control-static">{{vm.time}}</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-xs-2">Meeting Items</label>
+                    <div class="col-xs-10">
+                        <ul>
+                            <li ng-repeat="meetingItem in vm.meeting.MeetingItems">{{meetingItem.MeetingItemName}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</section>

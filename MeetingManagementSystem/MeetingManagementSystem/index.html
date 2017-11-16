@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html ng-app="MEET">
+<head>
+    <meta charset="utf-8">
+    <title>Chillisoft dev test</title>
+    <!-- Stylesheets -->
+
+    <link href="Assets/css/bootstrap.css" rel="stylesheet">
+    <link href="Assets/css/revolution-slider.css" rel="stylesheet">
+    <link href="Assets/css/style.css" rel="stylesheet" />
+    <link href="Assets/css/loading-bar.css" rel="stylesheet" />
+    <link href="Assets/css/toastr.css" rel="stylesheet" />
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link href="Assets/css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+</head>
+
+<body ng-controller="indexController">
+    <div class="page-wrapper">
+
+        <!-- Preloader -->
+        <div class="preloader"></div>
+
+        <!-- Main Header -->
+        <header class="main-header">
+            <div class="auto-container clearfix">
+
+                <!--Main Menu-->
+                <nav class="main-menu">
+                    <div class="navbar-header">
+                        <!-- Toggle Button -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <div class="navbar-collapse collapse clearfix">
+                        <ul class="navigation">
+                            <li style="cursor:pointer" ng-class="{'current' : isHome && !isNewMeeting && !isUpdateMeeting}" ng-click="navigateToHome('/home')"><a>Home</a></li>
+                            <li style="cursor:pointer" ng-class="{'current' : isNewMeeting && !isHome && !isUpdateMeeting}" ng-click="navigateToMeeting('/newMeeting')"><a>New Meeting</a></li>
+                            <li style="cursor:pointer" ng-class="{'current' : isUpdateMeeting && !isHome && !isNewMeeting }" ng-click="navigateToUpate('/updateMeeting')"><a>Update Meeting</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <!--Main Menu End-->
+            </div>
+        </header>
+        <div ng-view>
+        </div>
+
+    </div>
+
+    <script src="Assets/js/jquery.js"></script>
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <script src="Scripts/moment.js"></script>
+    <link href="Content/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <script src="Assets/js/revolution.min.js"></script>
+    <script src="Assets/js/bxslider.js"></script>
+    <script src="Assets/js/owl.carousel.min.js"></script>
+    <script src="Assets/js/jquery.fancybox.pack.js"></script>
+    <script src="Assets/js/wow.js"></script>
+    <script src="Assets/js/script.js"></script>
+
+    <!--<script src="Assets/js/bootstrap.js"></script>-->
+    <script src="Assets/js/jquery.flexisel.js"></script>
+    <script src="Assets/js/jquery.flexslider.js"></script>
+    <script src="Assets/js/counterup.min.js"></script>
+
+    <!-- libraries -->
+    <script src="Assets/js/angular.js"></script>
+    <script src="Assets/js/angularJwt.js"></script>
+    <script src="Assets/js/angular-route.js"></script>
+    <script src="Assets/js/angular-ui-router.js"></script>
+    <script src="Assets/js/angular-local-storage.min.js"></script>
+    <script src="Assets/js/ngStorage.min.js"></script>
+    <script src="Assets/js/ai.0.15.0-build58334.js"></script>
+    <script src="Assets/js/angular-animate.js"></script>
+    <script src="Assets/js/angular-aria.js"></script>
+
+    <script src="Assets/js/angular-material.js"></script>
+    <script src="Assets/js/angular-messages.js"></script>
+    <script src="Assets/js/angular-mocks.js"></script>
+    <script src="Assets/js/angular-moment.min.js"></script>
+
+    <script src="Assets/js/base64.js"></script>
+    <script src="Assets/js/bootstrap.js"></script>
+    <script src="Assets/js/counterup.min.js"></script>
+    <script src="Assets/js/interceptor.js"></script>
+    <script src="Assets/js/jquery.flexisel.js"></script>
+    <script src="Assets/js/jquery.flexslider.js"></script>
+    <script src="Assets/js/jquery-2.1.4.min.js"></script>
+    <script src="Assets/js/bootstrap.js"></script>
+    <script src="Assets/js/scripts.js"></script>
+    <script src="Assets/js/loading-bar.js"></script>
+    <script src="Assets/js/angular-toastr.tpls.min.js"></script>
+
+    <!-- App Config -->
+    <script src="app/app.js"></script>
+    <script src="app/config.route.js"></script>
+
+    <!-- controllers -->
+    <script src="index.controller.js"></script>
+    <script src="App/Components/meeting/newMeeting/create.meeting.controller.js"></script>
+    <script src="App/Components/meeting/ExistingMeeting/update.meeting.controller.js"></script>
+    <script src="App/Components/home/home.controller.js"></script>
+    <script src="App/Components/meeting/viewMeeting/viewMeeting.controller.js"></script>
+
+
+
+    <!-- services -->
+    <script src="App/Components/meeting/meeting.service.js"></script>
+
+    <!-- factory -->
+    <script src="App/Components/meeting/meeting.factory.js"></script>
+
+    <!--End pagewrapper-->
+    <!--Scroll to top-->
+    <div class="scroll-to-top"></div>
+</body>
+</html>

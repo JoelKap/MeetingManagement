@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "chillisoft", "..\..\..\..\..\..\My Web Sites\chillisoft\", "{86EC5D86-1E54-4D29-9673-EFDCAEE89936}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_18426"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\..\..\My Web Sites\chillisoft\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_18426\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_18426"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\..\..\My Web Sites\chillisoft\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_18426\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "18426"
+		SlnRelativePath = "..\..\..\..\..\..\My Web Sites\chillisoft\"
+	EndProjectSection
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "MeetingManagement.database", "MeetingManagementDB\MeetingManagement.Database.sqlproj", "{6EB443AC-67B3-4A7F-B7C1-4A9A8BA1B4A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86EC5D86-1E54-4D29-9673-EFDCAEE89936}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86EC5D86-1E54-4D29-9673-EFDCAEE89936}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86EC5D86-1E54-4D29-9673-EFDCAEE89936}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{86EC5D86-1E54-4D29-9673-EFDCAEE89936}.Debug|x86.Build.0 = Debug|Any CPU
+		{86EC5D86-1E54-4D29-9673-EFDCAEE89936}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{86EC5D86-1E54-4D29-9673-EFDCAEE89936}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{86EC5D86-1E54-4D29-9673-EFDCAEE89936}.Release|x86.ActiveCfg = Debug|Any CPU
+		{86EC5D86-1E54-4D29-9673-EFDCAEE89936}.Release|x86.Build.0 = Debug|Any CPU
+		{6EB443AC-67B3-4A7F-B7C1-4A9A8BA1B4A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EB443AC-67B3-4A7F-B7C1-4A9A8BA1B4A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EB443AC-67B3-4A7F-B7C1-4A9A8BA1B4A7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6EB443AC-67B3-4A7F-B7C1-4A9A8BA1B4A7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6EB443AC-67B3-4A7F-B7C1-4A9A8BA1B4A7}.Debug|x86.Build.0 = Debug|Any CPU
+		{6EB443AC-67B3-4A7F-B7C1-4A9A8BA1B4A7}.Debug|x86.Deploy.0 = Debug|Any CPU
+		{6EB443AC-67B3-4A7F-B7C1-4A9A8BA1B4A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EB443AC-67B3-4A7F-B7C1-4A9A8BA1B4A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EB443AC-67B3-4A7F-B7C1-4A9A8BA1B4A7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6EB443AC-67B3-4A7F-B7C1-4A9A8BA1B4A7}.Release|x86.ActiveCfg = Release|Any CPU
+		{6EB443AC-67B3-4A7F-B7C1-4A9A8BA1B4A7}.Release|x86.Build.0 = Release|Any CPU
+		{6EB443AC-67B3-4A7F-B7C1-4A9A8BA1B4A7}.Release|x86.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
